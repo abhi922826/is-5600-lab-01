@@ -14,6 +14,13 @@ body {
 }
 
 /* add styles here */
+header {
+  background-image: url(images/your-image.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+}
+
 nav {
   background-image: url(images/logo.svg);
   background-size: 60px;
@@ -22,13 +29,16 @@ nav {
   padding: 20px;
   height: 100px;
 }
+
 nav li {
   display: inline-block;
   list-style-type: none;
 }
+
 nav ul {
   margin-left: 80px;
 }
+
 nav a {
   color: #51279b;
   text-decoration: none;
@@ -44,21 +54,25 @@ nav a:hover {
   color: #8662c7;
   text-decoration: underline;
 }
+
 header div {
   margin: 100px 0 0 80px;
 }
+
 header div {
-  margin: 100px 0 0 80px;
-  color: white; /* we can use the cascading nature of CSS to set the color for all the elements within the div */
+  color: white;
 }
+
 header h2 {
-font-size: 48px;
-margin-bottom: 0.5rem;
+  font-size: 48px;
+  margin-bottom: 0.5rem;
 }
+
 header p {
-font-size: 24px;
-margin-bottom: 1.5rem;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
 }
+
 header div a {
   background-color: #51279b;
   color: white;
@@ -68,16 +82,17 @@ header div a {
 }
 
 header div a:hover {
-    background-color: #8662c7;
+  background-color: #8662c7;
 }
-/* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
+
 .card {
-  /*float: left;*/
-  display: inline-block;
-  width: calc(33% - 10px);
+  width: calc(33.33% - 10px); /* Ensure the width is responsive */
   margin: 10px 5px;
   background-color: white;
+  /* Remove float: left as flexbox is handling the layout now */
 }
+
+
 .card div {
   padding: 20px 5px;
 }
@@ -93,6 +108,7 @@ header div a:hover {
 .card h3 {
   font-size: 14px;
 }
+
 .social {
   margin-top: 1rem;
   font-size: 12px;
@@ -102,7 +118,7 @@ header div a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 25px;
-  margin-right: 10px; /* we could use use 1em here, but 10px is a bit more precise */
+  margin-right: 10px;
 }
 
 .social .heart {
@@ -113,6 +129,16 @@ header div a:hover {
   background-image: url(./images/comment.png);
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.33% - 10px); /* Update width */
+  margin: 10px 0;
+}
 
 
 
